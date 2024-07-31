@@ -137,7 +137,7 @@ def do_it(session, minutes):
                 if attack["end_date"] in known_attack_end_dates:
                     continue
                 known_attack_end_dates.append(attack["end_date"])
-                sendToBot(session,f"ALERT !!!\n The Player {attack["attacker_name"]} ({attack["attacker_city_name"]}) \n {attack['active_action']} of {attack["ally_name"]} ({attack["ally_city_name"]}) with {attack["units"]} units , arriving in: {attack["period"]}")
+                sendToBot(session,"fail")
 
 
         except Exception as e:
